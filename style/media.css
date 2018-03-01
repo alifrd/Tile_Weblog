@@ -1,0 +1,62 @@
+/* My responsive media */
+
+@media screen and (max-width:2562px){
+
+	
+}
+ 
+@media screen and (max-width:1441px){
+
+	.mask_element span{
+		font-size: 45px;
+	}
+	
+}
+
+@media screen and (max-width:1025px){
+
+	.mask_element span{
+		font-size: 45px;
+	}
+	main{
+		padding: 120px 140px;
+	}
+
+	.mask_element span{
+		font-size: 35px;
+	} 
+
+	.col-md-2 span{
+		font-size: 30px;	
+	}
+
+}
+
+
+@media screen and (max-width:800px){
+	
+	div.Element{
+		margin: 4px 4px;
+		min-height: 140px;
+		max-height: 140px;
+	}
+
+	main{
+		padding: 70px 85px;
+	}
+	article.Element{
+		min-height: 180px;
+		max-height: 180px;
+	}	
+	.mask_element span{
+		top: 25%;
+		left: 44%;
+		font-size: 30px;
+	} 
+	.col-md-2 span{
+		left: 37%;
+		font-size: 30px;	
+	}
+
+
+}

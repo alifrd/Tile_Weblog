@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+
+/* global style */
+*{
+	font-family: 'Pompiere', cursive;
+}
+html,body,figure,figcaption{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;	
+}
+a{
+	margin: 0px;
+	padding: 0px;
+	color: snow;
+}
+aside{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+textarea{
+	font-size: 14px;
+	display: block;
+	background-color: transparent;
+	border:none;
+	text-align: center;
+	width: 90%;
+	height: 40%;
+	margin: 0 auto;	
+	resize: none;
+	outline-width: 0px;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: fixed;
+
+}
+.mask img{
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.hidden{
+	visibility: hidden;
+	-webkit-transition: ease-in-out 0.15s;
+    -moz-transition: ease-in-out 0.15s;
+    transition: ease-in-out 0.15s;
+}
+/* Backgrounds*/
+.background_day{
+	background-color:rgba(56, 119, 145, 0.5);
+	color: snow;
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+.background_day:hover{
+	background-color: rgba(55, 158, 201, 0.5);
+    color: rgb(211, 154, 19);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+
+.background_cloudy{
+	background-color:rgba(139, 186, 206, 0.5);
+    color: rgb(65, 161, 241);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+.background_cloudy:hover{
+	background-color: rgba(116, 197, 208, 0.5);
+    color: rgb(192, 219, 231);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+
+.background_green{
+	background-color: rgba(102, 130, 123, 0.5);
+    color: rgba(133, 255, 0, 0.84);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+.background_green:hover{
+	background-color: rgba(110, 148, 138, 0.5);
+    color: rgb(0, 144, 53);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;	
+}
+
+.background_snow{
+	background-color: rgba(102, 130, 123, 0.5);
+    color: rgb(163, 216, 244);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+.background_snow:hover{
+	background-color: rgba(110, 148, 138, 0.5);
+    color: rgb(30, 128, 180);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;	
+}
+
+.background_night{
+	background-color: rgba(97, 115, 111, 0.5);
+    color: rgb(255, 255, 255);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+.background_night:hover{
+	background-color: rgba(110, 148, 138, 0.5);
+    color: rgb(156, 167, 158);
+	-webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;	
+}
+
+/* Contnet */
+main{
+	padding: 8% 7%;
+}
+article.Element{
+	padding: 0px;
+	z-index: 10;
+	font-size: 25px;
+	margin: 5px 5px;
+	min-height: 170px;
+	max-height: 170px;
+}
+.reset_background{
+		background-color:rgba(0, 0, 0, 0) !important;	
+		-webkit-transition: ease-in-out 0.13s;
+	    -moz-transition: ease-in-out 0.13s;
+   		 transition: ease-in-out 0.13s;
+
+}
+figure{
+	width: 100%;
+	height: 100%;
+	position:absolute; 
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+figcaption{
+	box-sizing: border-box;
+	font-size: 17px;
+	color: black !important;
+	position: absolute;
+	text-align: center;
+	top: 55px;
+	left: 0;
+}
+article > figure > span{
+	font-size: 22px;
+}
+article > figure > span:nth-child(1){
+	font-size: 50px;
+}
+article > figure > span > p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+}  
+article > figure > span > i{
+	margin-top: 50px;	
+}	
+article > figure > span#ele9 > i{
+	margin-top: 0px;	
+}
+
+/* Sub_Tile */
+.Sub_Tile{
+	height: 48.5%;	
+}
+
+.col-md-45 > span{
+	position: relative;
+	top: 18%;
+	font-size: 32px;
+}
+
+.Sub_Tile.col-md-4{
+	height: 31.5%;	
+}
+.col-md-4 > span{
+	position: relative;
+	top: 20%;
+	font-size: 20px;
+}
+
+.Sub_Tile:nth-child(1){
+	margin-right: 2px;
+	margin-bottom: 5px;
+}
+.Sub_Tile:nth-child(2){
+	margin-bottom: 5px;
+}
+.Sub_Tile:nth-child(3){
+}
+.Sub_Tile:nth-child(4){
+	margin-bottom: 5px;
+}
+.Sub_Tile:nth-child(5){
+	margin-bottom: 5px;
+}
+.Sub_Tile:nth-child(6) > i{
+	color: 	rgba(0, 0, 0, 0) !important;	
+}
+.Sub_Tile:nth-child(6){
+}
+.Sub_Tile:nth-child(7){
+}
+.Sub_Tile:nth-child(8){
+}
+.Sub_Tile:nth-child(9){
+}
+
+/* Custom*/
+#ele3,#ele7,#ele9,#ele10{
+	position: absolute;
+	z-index: 10;
+}
+#ele3{
+	left: 40%;
+	top: 5%;	
+}
+#ele7{
+	left: 40%;	
+	top: 5%;	
+}
+#ele9{
+	left: 40%;
+	top: 25%;
+}
+#ele10{
+	left: 48%;
+	top: -10%;
+}
+
+/* Page Two*/
+aside > main > section:nth-child(1) > article.Element{
+	min-height: 80px;
+	max-height: 80px;
+}
+aside  > main > section:nth-child(1) > article > figure > .Sub_Tile.col-md-4{
+	width: 7.3%;
+	height: 100%;
+}
+aside  > main > section:nth-child(1) >article > figure > span > i {
+    margin-top: 0px;
+}
+.edit{
+	font-size: 22px;
+}
+/* new Tile*/
+
+#new > figure > figcaption{
+	padding-right: 16px;
+	top: 30px;
+}
+
+#new > figure > figcaption > div{
+	margin: 0px;
+	padding: 0px 5px 0px 18px;
+}
+
+#new > figure > figcaption > input{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	line-height: 20px;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+}
+#new > figure > figcaption > input::placeholder { 
+    color: black;
+}
+#new > figure > figcaption > div > span{
+	font-size: 15px;
+}
+#new > figure > figcaption > div > span > i{
+	-webkit-transition: ease-in-out 0.15s;
+    -moz-transition: ease-in-out 0.15s;
+    transition: ease-in-out 0.15s;
+}
+
+#new > figure > figcaption > div > span > i:nth-child(1){
+	position: relative;
+	left:16px;
+	opacity: 0;
+}
+#new > figure > figcaption > #craft{
+	font-size: 15px;
+	-webkit-transition: ease-in-out 0.15s;
+    -moz-transition: ease-in-out 0.15s;
+    transition: ease-in-out 0.15s;
+    color: #ffffffb5;
+}
+
+#new > figure > figcaption > #craft:hover{
+	-webkit-transition: ease-in-out 0.15s;
+    -moz-transition: ease-in-out 0.15s;
+    transition: ease-in-out 0.15s;
+    color:  snow;
+}
+#craft{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.display{
+	opacity: 1 !important;
+}
+
+
+
+
+/* Grid system */
+
+.col-md-2,.col-md-3,.col-md-4, .col-md-6, .col-md-12,.col-md-8,.col-md,.col-md-12{
+	position: relative;
+	display: block;
+}
+.col-md-2,.col-md-3,.col-md-4,.col-md-45,.col-md-5, .col-md-6,.col-md-8,.col-md-12{
+	display: inline-block;
+}
+
+.col-md-1{
+	width: 7%;	
+}
+.col-md-2{
+	width: 14%;	
+}
+.col-md-3{
+	width: 22%;
+}
+.col-md-4{
+	width: 29%;
+}
+.col-md-45{
+	width: 47%;
+}
+.col-md-5{
+	 width: 48%;
+}
+.col-md-6{
+	 width: 50%;
+}
+.col-md-8{
+	 width: 66%;
+}
+.col-md-10{
+	 width: 70%;
+}
+.col-md-12{
+	width: 100%;
+}
